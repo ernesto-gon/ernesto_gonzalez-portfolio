@@ -221,11 +221,16 @@
     </footer>
 
     <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const navLinks = document.getElementById('nav-links');
+        document.addEventListener('DOMContentLoaded', () => {
 
-        hamburgerBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
         });
     </script>
 
