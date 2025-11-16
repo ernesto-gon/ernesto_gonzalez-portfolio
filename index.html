@@ -220,5 +220,14 @@
         <p>&copy; 2025 Ernesto González. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
